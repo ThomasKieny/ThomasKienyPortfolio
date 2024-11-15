@@ -4217,10 +4217,12 @@ input, select, textarea {
 				display: -webkit-flex;
 				display: -ms-flex;
 				display: flex;
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				align-items: center; /* Ajoutez cette ligne */
+				justify-content: space-between; /* Ou 'center' selon vos besoins */
 				padding: 0;
 			}
 
@@ -4278,11 +4280,11 @@ input, select, textarea {
 					}
 
 					#footer > section.split.contact > section:first-child {
-						padding: 4rem 4rem 3rem 4rem;
+						padding: 4rem 4rem 4rem 4rem;
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						padding: 4rem 4rem 4rem 4rem;
 					}
 
 					#footer > section.split.contact > section.alt {
